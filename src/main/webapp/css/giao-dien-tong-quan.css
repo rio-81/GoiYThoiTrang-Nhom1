@@ -1,0 +1,45 @@
+.the-quan-ly {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: clamp(16px, 2vw, 28px);
+    border: 1px solid #e3dcd1;
+    border-radius: 14px;
+    background: #fff;
+    color: #292723;
+    overflow-x: auto;
+}
+
+.noi-dung-quan-tri .the-quan-ly > h1,
+.noi-dung-quan-tri .the-quan-ly > h2 {
+    margin: 0 0 20px;
+    color: #292723;
+    font-size: clamp(21px, 1.6vw, 27px);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+.the-quan-ly table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.the-quan-ly th, .the-quan-ly td {
+    padding: 12px;
+    border-bottom: 1px solid #e8e1d7;
+    line-height: 1.5;
+}
+.the-quan-ly th { background: #eee6d8; color: #382e25; }
+
+.khung-top-san-pham { margin-bottom: 24px; }
+.bang-xep-hang th, .bang-xep-hang td { text-align: center; }
+.bang-xep-hang th:nth-child(2), .bang-xep-hang td:nth-child(2) { text-align: left; }
+
+.cac-o-tong-quan { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.o-tong-quan { padding: 16px; border: 1px solid #e3d8c7; border-radius: 8px; }
+.o-tong-quan span { display: block; margin-bottom: 10px; color: #51483c; font-size: 14px; }
+.o-tong-quan strong { font-size: 24px; }
+@media (max-width: 760px) {
+    .cac-o-tong-quan { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+.tong-quan-so-lieu { margin-bottom: 20px; }
+.tong-quan-so-lieu .cac-o-tong-quan { margin: 0; }
+.tong-quan-so-lieu .o-tong-quan { background: #fbf8f3; }

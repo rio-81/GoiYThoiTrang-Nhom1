@@ -1,0 +1,194 @@
+.noi-dung-quan-tri:has(.bo-cuc-set) {
+    --chu: #292723;
+    --chu-nhat: #665e55;
+    --vien: #e3dcd1;
+    --nhan: #5d4735;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1560px;
+    margin-inline: auto;
+    padding: clamp(18px, 2.6vw, 44px);
+    font-family: Arial, sans-serif;
+    color: var(--chu);
+}
+
+.noi-dung-quan-tri:has(.bo-cuc-set) > h2 {
+    margin: 26px 0 14px;
+    color: var(--chu);
+    font-size: clamp(21px, 1.6vw, 27px);
+    letter-spacing: -.035em;
+}
+
+.noi-dung-quan-tri:has(.bo-cuc-set) > h2:first-child {
+    margin-top: 0;
+}
+
+.noi-dung-quan-tri .bang-set-do {
+    width: 100%;
+    max-width: none;
+    overflow: hidden;
+    border: 1px solid var(--vien);
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 14px;
+    background: white;
+}
+
+.noi-dung-quan-tri .bang-set-do th {
+    padding: 14px 12px;
+    color: var(--chu-nhat);
+    background: #eee7dc;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.noi-dung-quan-tri .bang-set-do td {
+    padding: 17px 12px;
+    border-bottom: 1px solid var(--vien);
+    background: white;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.noi-dung-quan-tri .bang-set-do tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+.noi-dung-quan-tri .bang-set-do td:nth-child(2) {
+    font-weight: 600;
+}
+
+.noi-dung-quan-tri .bang-set-do th:first-child,
+.noi-dung-quan-tri .bang-set-do td:first-child {
+    width: 48px;
+}
+
+.noi-dung-quan-tri .bang-set-do button {
+    min-height: 34px;
+    padding: 5px 10px;
+    border: 1px solid #d4c7ba;
+    border-radius: 7px;
+    background: #faf7f1;
+    color: var(--nhan);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.noi-dung-quan-tri .bang-set-do form[method="post"] button {
+    border-color: #e8cfc9;
+    background: #fff9f7;
+    color: #933e31;
+}
+
+.bo-cuc-set .the-set > form {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    padding: clamp(18px, 2vw, 28px);
+    border: 1px solid var(--vien);
+    border-radius: 14px;
+    background: white;
+}
+
+.bo-cuc-set .the-set > form p {
+    margin: 0 0 20px;
+}
+
+.bo-cuc-set .the-set > form p label,
+.bo-cuc-set .the-set > form legend {
+    display: block;
+    margin-bottom: 9px;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bo-cuc-set input[name="tenSetDo"] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #c9bfb1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.bo-cuc-set .the-set > form fieldset {
+    min-width: 0;
+    margin: 0 0 16px;
+    padding: 0;
+    border: 0;
+}
+
+.bo-cuc-set .the-set > form fieldset br {
+    display: none;
+}
+
+.bo-cuc-set .the-set > form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+    padding: 9px 11px;
+    border: 1px solid var(--vien);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    cursor: pointer;
+}
+
+.bo-cuc-set .the-set > form fieldset label:has(:checked) {
+    border-color: #927960;
+    background: #f5eee3;
+}
+
+.bo-cuc-set input[name="maSanPhamTrongSet"] {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: var(--nhan);
+}
+
+.bo-cuc-set .the-set > form button {
+    padding: 11px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #342c24;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.noi-dung-quan-tri:has(.bo-cuc-set) :focus-visible {
+    outline: 2px solid #866448;
+    outline-offset: 2px;
+}
+
+
+.bo-cuc-set {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr);
+    align-items: start;
+    gap: 20px;
+}
+.the-set {
+    min-width: 0;
+    padding: 20px;
+    border: 1px solid var(--vien);
+    border-radius: 14px;
+    background: white;
+    overflow-x: auto;
+}
+.the-set h2 { margin: 0 0 22px; font-size: 25px; }
+.noi-dung-quan-tri .bo-cuc-set .the-set > form { border: 0; padding: 0; }
+.the-set > form > button { width: 100%; }
+.the-set > form > a { display: inline-block; margin-top: 10px; color: #594737; }
+.the-set .mon-trong-set { display: list-item; margin-left: 1em; }
+.the-set .mon-trong-set::marker { color: #795a40; }
+@media (max-width: 1199px) {
+    .bo-cuc-set { grid-template-columns: minmax(0, 1fr); }
+}
+
+.bang-set-do th, .bang-set-do td { text-align: left; }
+.bang-set-do th:first-child, .bang-set-do td:first-child { text-align: center; }
+.bang-set-do td:last-child form { display: inline-block; margin: 2px; }

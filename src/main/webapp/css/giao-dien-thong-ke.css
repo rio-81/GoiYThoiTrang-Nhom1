@@ -1,0 +1,44 @@
+.the-quan-ly {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: clamp(16px, 2vw, 28px);
+    border: 1px solid #e3dcd1;
+    border-radius: 14px;
+    background: #fff;
+    color: #292723;
+    overflow-x: auto;
+}
+
+.noi-dung-quan-tri .the-quan-ly > h1,
+.noi-dung-quan-tri .the-quan-ly > h2 {
+    margin: 0 0 20px;
+    color: #292723;
+    font-size: clamp(21px, 1.6vw, 27px);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+.the-quan-ly table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.the-quan-ly th, .the-quan-ly td {
+    padding: 12px;
+    border-bottom: 1px solid #e8e1d7;
+    line-height: 1.5;
+}
+.the-quan-ly th { background: #eee6d8; color: #382e25; }
+
+.khung-top-san-pham { margin-bottom: 24px; }
+.bang-xep-hang th, .bang-xep-hang td { text-align: center; }
+.bang-xep-hang th:nth-child(2), .bang-xep-hang td:nth-child(2) { text-align: left; }
+.tong-click {
+    display: inline-flex;
+    gap: 16px;
+    align-items: baseline;
+    margin: 0 0 18px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background: #f6f0e7;
+}
+.tong-click strong { font-size: 22px; }

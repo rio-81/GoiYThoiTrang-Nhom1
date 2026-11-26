@@ -220,7 +220,7 @@
 
                                 <c:forEach items="${o.products}" var="p" varStatus="loop">
                                     <c:if test="${loop.index < 3}">
-                                        <a href="${p.affiliateUrl}" target="_blank" class="floating-tag tag-pos-${loop.index}" title="Click để mua ${p.name}">
+                                        <a href="${pageContext.request.contextPath}/mua-san-pham?id=${p.productId}" target="_blank" class="floating-tag tag-pos-${loop.index}" title="Click để mua ${p.name}">
                                             <img src="${p.imageUrl}" alt="${p.name}" onerror="this.src='https://placehold.co/60x60/eee/333?text=Item'">
                                             <div class="floating-tag-info">
                                                 <div class="floating-tag-name">${p.name}</div>

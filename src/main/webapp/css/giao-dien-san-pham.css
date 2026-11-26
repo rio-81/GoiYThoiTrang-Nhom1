@@ -1,0 +1,84 @@
+.luoi-quan-ly {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(300px, 1fr);
+    align-items: start;
+    gap: 20px;
+}
+.the-quan-ly {
+    min-width: 0;
+    box-sizing: border-box;
+    padding: clamp(16px, 2vw, 28px);
+    border: 1px solid #e3dcd1;
+    border-radius: 14px;
+    background: #fff;
+    color: #292723;
+    overflow-x: auto;
+}
+
+.noi-dung-quan-tri .the-quan-ly > h1,
+.noi-dung-quan-tri .the-quan-ly > h2 {
+    margin: 0 0 20px;
+    color: #292723;
+    font-size: clamp(21px, 1.6vw, 27px);
+    line-height: 1.2;
+    letter-spacing: -.025em;
+}
+.the-quan-ly table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+.the-quan-ly th, .the-quan-ly td {
+    padding: 12px;
+    border-bottom: 1px solid #e8e1d7;
+    line-height: 1.5;
+}
+.the-quan-ly th { background: #eee6d8; color: #382e25; }
+.bang-quan-ly th, .bang-quan-ly td { text-align: left; }
+.bang-quan-ly tbody tr:nth-child(even) { background: #fbf9f6; }
+.bang-quan-ly td:first-child { font-weight: 600; }
+.the-quan-ly > form p { margin: 0 0 15px; }
+.the-quan-ly > form label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 14px; }
+.the-quan-ly > form input:not([type="hidden"]), .the-quan-ly > form select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cfc4b6;
+    border-radius: 8px;
+    background: white;
+    color: #292723;
+    font: inherit;
+}
+.the-quan-ly > form > select { margin-bottom: 15px; }
+.the-quan-ly > form > button {
+    width: 100%;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    background: #403226;
+    color: white;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+.the-quan-ly :focus-visible { outline: 2px solid #896a48; outline-offset: 2px; }
+
+@media (max-width: 1199px) {
+    .luoi-quan-ly { grid-template-columns: minmax(0, 1fr); }
+}
+.bang-quan-ly td form { display: inline-block; margin: 2px; }
+.bang-quan-ly button {
+    min-height: 34px;
+    padding: 6px 11px;
+    border: 1px solid #d9cbbb;
+    border-radius: 7px;
+    background: #faf6ef;
+    color: #5b422d;
+    cursor: pointer;
+}
+.bang-quan-ly form[method="post"] button {
+    border-color: #eccfc8;
+    background: #fff8f6;
+    color: #953e31;
+}
+.the-quan-ly .huy-sua { display: inline-block; margin-top: 12px; color: #594330; }
